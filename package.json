@@ -1,14 +1,15 @@
 {
   "name": "cse341-project1",
   "version": "1.0.0",
+  "type": "module",
   "description": "week 1 - 2 project for cse341. An API that wwill be used by frontend apps tointeract with a mongoDB database. This will stroe some information about contacts. ",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
-  },
+    "format": "prettier --write \"**/*.{js,cjs,mjs,json,md,css}\""
+  }
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thandosim/cse341-project1.git"
@@ -29,6 +30,9 @@
     "@eslint/js": "^9.30.1",
     "@eslint/json": "^0.12.0",
     "@eslint/markdown": "^6.6.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
     "globals": "^16.3.0",
     "prettier": "^3.6.2"
   },
