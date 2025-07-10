@@ -1,15 +1,13 @@
 {
   "name": "cse341-project1",
   "version": "1.0.0",
-  "type": "module",
   "description": "week 1 - 2 project for cse341. An API that wwill be used by frontend apps tointeract with a mongoDB database. This will stroe some information about contacts. ",
   "main": "server.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,cjs,mjs,json,md,css}\""
-  }
-,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thandosim/cse341-project1.git"
@@ -21,6 +19,7 @@
   },
   "homepage": "https://github.com/thandosim/cse341-project1#readme",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "mongodb": "^6.17.0"

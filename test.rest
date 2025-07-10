@@ -1,2 +1,35 @@
+### remote host: https://cse341-project1-t5f5.onrender.com
 https://cse341-project1-t5f5.onrender.com/contacts/68650b44ef3a82b0963ddefe&68650999ef3a82b0963ddefd
 # https://cse341-project1-t5f5.onrender.com/contacts
+
+### local host: http://localhost:3000
+### get all contacts
+GET http://localhost:3000/contacts
+### get single contact
+GET http://localhost:3000/contacts/68650b44ef3a82b0963ddefe
+### create contact 
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@test.com",
+  "favoriteColor": "blue", 
+  "birthday": "1990-01-01"
+}
+
+### update contact
+PUT http://localhost:3000/contacts/686f94524f5f86738c4563b6 HTTP/1.1
+Content-Type: application/json  
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@test.com",
+  "favoriteColor": "blue", 
+  "birthday": "1990-01-01"
+}
+
+### delete contact
+DELETE http://localhost:3000/contacts/686f9260c6ccd055860a946a
